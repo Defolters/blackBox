@@ -31,11 +31,11 @@ public:
     */
     void Add(Data);
 
-    //! get Data
+    //! get data with higher priority
     /*!
-    \return Data
+    \return pair<int,int>
     */
-    std::pait<int,int> Get();
+    std::pair<int,int> Get();
     };
 
 #endif // BLACKBOX_H
