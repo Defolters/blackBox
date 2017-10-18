@@ -111,6 +111,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BlackBox.h" />
+    <ClInclude Include="Data.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BlackBox.cpp" />
+    <ClCompile Include="Data.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
