@@ -1,5 +1,6 @@
 #ifndef BLACKBOX_H
 #define BLACKBOX_H
+#include "Data.h"
 #include <list>
 class blackBox
 {
