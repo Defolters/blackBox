@@ -17,7 +17,7 @@ std::pait<int,int> blackBox::Get()
     if (conts.size() == 0)
         return ;
     else
-        return (conts[conts.size()-1].get());
+        return ((conts.end()--)->get());
 }
 
 void blackBox::Add(Data data_)
