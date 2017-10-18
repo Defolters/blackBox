@@ -18,7 +18,7 @@ private:
     std::list<Data> conts;
 public:
     void Add(Data);
-    Data Get();
+    std::pait<int,int> Get();
 };
 
 #endif // BLACKBOX_H
