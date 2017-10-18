@@ -35,7 +35,7 @@ public:
     /*!
     \return Data
     */
-    Data Get();
-};
+    std::pait<int,int> Get();
+    };
 
 #endif // BLACKBOX_H
