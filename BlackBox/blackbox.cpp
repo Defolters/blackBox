@@ -12,12 +12,16 @@ blackBox::blackBox(Data data_)
     conts.push_back(data_);
 }
 
-std::pait<int,int> blackBox::Get()
+std::pair<int,int> blackBox::Get()
 {
     if (conts.size() == 0)
-        return ;
+        throw 1;
     else
-        return ((conts.end()--)->get());
+    {
+        return ((conts.begin())->get());
+        //FIXME
+        conts.erase(conts.begin());//SOMEHOW INCORRECT
+    }
 }
 
 void blackBox::Add(Data data_)
