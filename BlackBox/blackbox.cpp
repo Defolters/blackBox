@@ -17,7 +17,7 @@ std::pait<int,int> blackBox::Get()
     if (conts.size() == 0)
         return ;
     else
-        return (conts[conts.size()-1]);//TODO
+        return ((conts.end()--)->get());
 }
 
 void blackBox::Add(Data data_)
@@ -25,7 +25,7 @@ void blackBox::Add(Data data_)
     auto pos = conts.begin();
     while (1)
     {
-        if (data_.priority > pos->priority || pos == conts.end())
+        if (data_.get().first > pos->get().first || pos == conts.end())
             break;
         pos++;
     }
