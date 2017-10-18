@@ -14,10 +14,11 @@ private:
 public:
     //! Constructor
     blackBox();
+
     //! Constructor
     /*!
-    Create black box with param
-    \param Data data
+    Create black box with Data
+    \param Data
     */
     blackBox(Data);
 
