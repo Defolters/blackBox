@@ -3,6 +3,10 @@
 blackBox::blackBox()
 {}
 
+blackBox::~blackBox()
+{
+}
+
 blackBox::blackBox(Data data_)
 {
     conts.push_back(data_);
