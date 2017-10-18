@@ -10,14 +10,30 @@ This class has some getter and setter to control box.
 class blackBox
 {
 private:
-    //! Constructor
-    blackBox();
-    //! Destructor
-    ~blackBox();
-    blackBox(Data);
     std::list<Data> conts;
 public:
+    //! Constructor
+    blackBox();
+    //! Constructor
+    /*!
+    Create black box with param
+    \param Data data
+    */
+    blackBox(Data);
+
+    //! Destructor
+    ~blackBox();
+
+    //! addData
+    /*!
+    \param Data
+    */
     void Add(Data);
+
+    //! get Data
+    /*!
+    \return Data
+    */
     Data Get();
 };
 
